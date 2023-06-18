@@ -1,0 +1,120 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#game-board {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #222222;
+  border: 1px solid #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#status-message {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.cell {
+  background-color: #383838;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #606060;
+}
+
+.score {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#reset-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #e03131;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+  background-color: #ae1b1b;
+}
+
+/* Spanish-themed styles */
+
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+#game-board {
+  background-color: #181818;
+  border-color: #ff6f00;
+  box-shadow: 0px 4px 10px rgba(255, 111, 0, 0.3);
+}
+
+#status-message {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cell {
+  background-color: #232323;
+  font-size: 80px;
+}
+
+#reset-button {
+  background-color: #ff6f00;
+  font-size: 20px;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#reset-button:hover {
+  background-color: #d85a00;
+  transform: scale(1.05);
+}
